@@ -7,7 +7,7 @@
   },
   "version": "1.1.0",
   "description": "A tiny library to perform search on JavaScript objects",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/aayani/searchX"
