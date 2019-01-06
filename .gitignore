@@ -1,7 +1,9 @@
 # directories
+/coverage
 /dist
 /node_modules
 
 # files
 .npmignore
 yarn.lock
+yarn-error.log

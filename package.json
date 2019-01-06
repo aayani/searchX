@@ -5,7 +5,7 @@
     "email": "wahaj_aayani@hotmail.com",
     "url": "git+https://github.com/aayani"
   },
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A tiny library to perform search on JavaScript objects",
   "license": "ISC",
   "repository": {
@@ -20,7 +20,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "mocha -r ts-node/register test/**.test.ts"
+    "cover": "istanbul cover --no-default-excludes mocha",
+    "test": "mocha"
   },
   "keywords": [
     "search",
@@ -29,9 +30,10 @@
     "util"
   ],
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.5",
+    "babel-istanbul": "^0.12.2",
     "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "ts-node": "^7.0.1",
     "typings": "^2.1.1"
