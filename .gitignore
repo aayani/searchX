@@ -4,6 +4,7 @@
 /node_modules
 
 # files
+.coveralls.yml
 .npmignore
 yarn.lock
 yarn-error.log
