@@ -3,11 +3,20 @@
     "target": "es6",
     "module": "commonjs",
     "declaration": true,
+    "lib": [
+      "es2017",
+      "es7",
+      "es6",
+      "dom"
+    ],
     "outDir": "./dist",
-    "strict": true
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false
   },
   "exclude": [
     "node_modules",
+    "dist",
     "test"
   ]
 }

@@ -5,7 +5,7 @@
     "email": "wahaj_aayani@hotmail.com",
     "url": "git+https://github.com/aayani"
   },
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A tiny library to perform search on JavaScript objects",
   "license": "ISC",
   "repository": {
@@ -16,7 +16,8 @@
   "bugs": {
     "url": "https://github.com/aayani/searchX/issues"
   },
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha -r ts-node/register test/**.test.ts"

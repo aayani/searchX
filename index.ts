@@ -1,7 +1,7 @@
 import _ from './helper';
 import { IOptions } from './interfaces';
 
-const search = (
+export const search = (
   keyword?: string,
   collection: Array<object> = [],
   options?: IOptions,
@@ -11,14 +11,14 @@ const search = (
       keyword
       && collection.length
     ) {
-      const results = [];
+      const results: Array<object> = [];
       const { columns = [] } = options || {};
 
       const sanitizedKeyword = _.sanitizeString(keyword);
 
       for (let i = 0; i < collection.length; i += 1) {
-        const item : any = collection[i];
-        const keys : Array<string> = Object.keys(item);
+        const item: object = collection[i];
+        const keys: Array<string> = Object.keys(item);
 
         for (let j = 0; j < keys.length; j += 1) {
           const key = keys[j];
@@ -49,5 +49,3 @@ const search = (
     reject(err);
   }
 }));
-
-export default search;

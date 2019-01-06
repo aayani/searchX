@@ -1,7 +1,7 @@
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
 
-import search from '../index';
+import { search } from '../index';
 
 const collection = [{
   id: 1,
